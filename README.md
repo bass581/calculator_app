@@ -1,6 +1,8 @@
 # calculator_app
 
-A new Flutter application.
+Simple calculator app to showcase the capabilities of flutter.
+
+![](calculator_app.gif)
 
 ## Getting Started
 
@@ -15,4 +17,3 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
-![](calculator_app.gif)
