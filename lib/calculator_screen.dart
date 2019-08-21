@@ -13,13 +13,19 @@ class CalculatorScreen extends StatefulWidget {
 }
 
 class _CalculatorScreenState extends State<CalculatorScreen> {
+  // From the math expressions library, set objects necessary for the calculation of expressions
   Parser p = Parser();
   ContextModel cm = ContextModel();
 
+  //Result is the text shown at the bottom of the output; Actual result from calculation
   String result = '0';
+  //Calculation shows the expression to be evaluated
   String calculation = '0';
 
+  //Function outputs a FlatButton widget that represents a particular number key
   FlatButton numberButton(String number) {
+    //Function appends character to calculation string fro evaluation.
+
     return FlatButton(
       onPressed: () {
         setState(() {
@@ -111,6 +117,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 FlatButton(
                   onPressed: () {
                     setState(() {
+                      //Divide current result by 100 to calculate percent
                       Expression exp = p.parse(calculation + '/100');
                       result = exp.evaluate(EvaluationType.REAL, cm).toString();
                     });
@@ -211,6 +218,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   child: FloatingActionButton(
                     onPressed: () {
                       setState(() {
+                        //calculate current expression to obtain result.
                         Expression exp = p.parse(calculation);
                         result =
                             exp.evaluate(EvaluationType.REAL, cm).toString();

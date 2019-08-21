@@ -1,3 +1,11 @@
+/*
+* Credit to Patri Pascual for the UI Design
+* https://dribbble.com/shots/3467471-DailyUI-004-Calculator
+*
+* Simple calculator app to showcase the capabilities of flutter.
+*
+* */
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'calculator_screen.dart';

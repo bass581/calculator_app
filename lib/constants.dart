@@ -7,27 +7,27 @@ const kExtraFunctionsColor = Color(0xFF4E4E4E);
 
 const kNumberButtonStyle = TextStyle(
   fontSize: 25.0,
-  color: Color(0xFFAEAEAE),
+  color: kNumberButtonColor,
 );
 
 const kOperationButtonStyle = TextStyle(
   fontSize: 25.0,
-  color: Color(0xFFFE6E70),
+  color: kOperationButtonColor,
 );
 
 const kExtraFunctionButtonStyle = TextStyle(
   fontSize: 25.0,
-  color: Color(0xFF4E4E4E),
+  color: kExtraFunctionsColor,
 );
 
 const kOutputTextStyle = TextStyle(
   fontSize: 90.0,
-  color: Color(0xFF4E4E4E),
+  color: kExtraFunctionsColor,
   fontWeight: FontWeight.w400,
 );
 
 const kCalculationStyle = TextStyle(
   fontSize: 25.0,
-  color: Color(0xFFAEAEAE),
+  color: kNumberButtonColor,
   fontWeight: FontWeight.w400,
 );
